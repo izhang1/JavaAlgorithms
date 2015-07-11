@@ -1,0 +1,11 @@
+/* Author : Ivan Zhang
+ * 
+ * Insertion sorting algorithm. 
+ * 
+ */
+
+public class InsertionSort {
+	public static void main(String [] args){
+		
+	}
+}
