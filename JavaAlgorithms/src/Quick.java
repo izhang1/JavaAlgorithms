@@ -40,6 +40,8 @@ import StdLib.StdRandom;
  *  @author Robert Sedgewick
  *  @author Kevin Wayne
  */
+
+
 public class Quick {
 
     // This class should not be instantiated.
