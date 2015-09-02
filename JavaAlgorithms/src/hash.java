@@ -14,14 +14,15 @@ public class hash {
 			 varValue += var.charAt(i);
 		}
 		
-		return (varValue * hValue);
+		return (varValue * hValue) % arr.length;
 	}
 	
-	//TODO: return an array with the same values of arr but doubled
+	//return an array with the same values of arr but doubled
 	private String[][] doubArr(String arr[][]){
 		return arr;
 	}
 	
+	// Doubles the inner array;
 	private String[][] doubleInnerArr(String arr[][], int innerArrIndex){
 		return arr;
 	}
@@ -29,10 +30,10 @@ public class hash {
 	//TODO: Add add the String to the specific position in the hash
 	private void add(String var){
 		int outArrIndex= hashFunt(var);
-		while(outArrIndex > arr.length) doubArr(arr);
+		System.out.println(outArrIndex);
+		if(outArrIndex > arr.length) doubArr(arr);
 		
 		int innerArrLength = this.arr[outArrIndex].length;
-		if(!this.arr[outArrIndex][innerArrLength].isEmpty()) doubleInnerArr(this.arr, outArrIndex);
 		
 		int tempCount = 0;
 		while(tempCount < this.arr[outArrIndex].length ){
@@ -50,9 +51,14 @@ public class hash {
 		int varCount = 0;
 		int tempCount = 0;
 		while(tempCount < this.arr[outArrIndex].length ){
+			if(this.arr[outArrIndex][tempCount] == null) break;
+			
 			if(this.arr[outArrIndex][tempCount].equals(var)){
 				varCount++;
 			}
+			
+			tempCount++;
+
 		}
 		
 		return varCount;
@@ -63,6 +69,14 @@ public class hash {
 		obj.add("Hello");
 		obj.add("Hello");
 		obj.add("Hello");
+		obj.add("How");
+		obj.add("How");
+		obj.add("Are");
+		obj.add("Hello");
+		obj.add("Hello");
+		obj.add("Hello");
+		
+		System.out.println(obj.getCount("Hello"));
 	}
 	
 	
