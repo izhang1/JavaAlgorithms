@@ -1,3 +1,12 @@
+// Author : Ivan Zhang
+/*
+ * Why? 
+ * MergeSort is a sorting method that at worst case is O(nlogn), which is comparable to some of the 
+ * best algorithms currently. Compared with Quicksort, Mergesort is better because it is stable and 
+ * at worst case it is O(nlogn). However it falters due to a space complexity of O(n). Quicksort on the
+ * other hand averages O(nlogn) and is not stable, but is O(1) space complexity.
+ */
+
 import java.util.Arrays;
 
 public class ownMergeSort {
