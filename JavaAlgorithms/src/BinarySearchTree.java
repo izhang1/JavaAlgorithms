@@ -76,6 +76,7 @@
      {
          root = insert(root, data);
      }
+     
      /* Function to insert data recursively */
      private BSTNode insert(BSTNode node, int data)
      {
@@ -90,6 +91,7 @@
          }
          return node;
      }
+     
      /* Functions to delete data */
      public void delete(int k)
      {
@@ -103,6 +105,7 @@
              System.out.println(k+ " deleted from the tree");
          }
      }
+     
      private BSTNode delete(BSTNode root, int k)
      {
          BSTNode p, p2, n;
